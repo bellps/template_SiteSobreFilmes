@@ -32,31 +32,31 @@
       </ul>
       <ul class="navbar-nav text-right">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Home
+          <a class="nav-link js-scroll-trigger" href= {{ Route('home') }}>Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Filmes</a>
+          <a class="nav-link js-scroll-trigger" href={{ Route('filmes') }}>Filmes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Séries</a>
+          <a class="nav-link js-scroll-trigger" href={{ Route('series') }}>Séries</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Desenhos</a>
+          <a class="nav-link js-scroll-trigger" href={{ Route('desenhos') }}>Desenhos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Sobre nós</a>
+          <a class="nav-link js-scroll-trigger" href={{ Route('sobre') }}>Sobre nós</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#"></a>
+          <a class="nav-link js-scroll-trigger" href=></a>
         </li>
         <!-- Dropdown -->
       </ul>
 
     <ul class="navbar-nav text-right">
         <li class="nav-item">
-          <button id="log" type="button" class="nav-link js-scroll-trigger btn btn-dark waves-effect btn-sm" href="#">Logout</button>
+          <button id="log" type="button" class="btn btn-dark btn-sm nav-link js-scroll-trigger" href= {{ Route('logout') }}>Logout</button>
         </li>
     </ul>
   </div>

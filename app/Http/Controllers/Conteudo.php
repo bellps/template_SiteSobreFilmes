@@ -27,9 +27,20 @@ class Conteudo extends Controller
         //fazer o resto
         $posts = [$post1, $post2];
         //, $post3, $post4, $post5, $post6, $post7, $post8, $post9
-        return view('home')->with('posts', $posts);
+        return $posts;
     }
-
+    function recentes(){
+        return view('home')->with('posts', $this->posts());
+    }
+    function desenhos(){
+        return view('desenhos')->with('posts', $this->posts());
+    }
+    function filmes(){
+        return view('home')->with('posts', $this->posts());
+    }
+    function series(){
+        return view('series')->with('posts', $this->posts());
+    }
     public function criarPost($nome,$categoria,$sinopse,$lancamento,$genero,$imagem){
         $novoPost['nome']=$nome;
         $novoPost['categoria']=$categoria;

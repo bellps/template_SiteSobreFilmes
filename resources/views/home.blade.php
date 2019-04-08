@@ -110,8 +110,9 @@
             <div class="card bg-dark text-white">
               <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
               <div class="card-img-overlay" >
-                <br><br><br><br><br><br><br><br><br>
-                <h5 class="card-title text-center"> {{ $post['nome'] }} </h5>
+                <div class="cardTittle">
+                <h5 class="card-title  text-center "> {{ $post['nome'] }} </h5>
+                </div>
               </div>
             </div>
           </div>

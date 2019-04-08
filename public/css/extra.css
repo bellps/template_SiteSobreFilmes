@@ -23,6 +23,12 @@ header,
   filter:brightness(50%);
 }
 
+.cardTittle{
+  position: relative;
+  text-align: center;
+  top: 200px;
+}
+
 #intro {
     -webkit-background-size: cover;
     -moz-background-size: cover;
