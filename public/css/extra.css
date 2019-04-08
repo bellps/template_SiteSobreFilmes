@@ -1,0 +1,40 @@
+html,
+body,
+header,
+#intro {
+    background-color: rgb(17, 17, 17);
+    height: 100%;
+}
+
+.c-image {
+  object-fit: cover;
+  object-position: center;
+
+  width: 1530px;
+  height: 583px;
+}
+
+.cardCerto {
+  object-fit: cover;
+  object-position: center;
+
+  width: 300px;
+  height: 300px;
+  filter:brightness(50%);
+}
+
+#intro {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* treco da navbar */
+.navtop{
+  transition:750ms ease;
+  background-color: transparent;
+}
+.navtop.scrolled{
+  background-color: black;
+}
