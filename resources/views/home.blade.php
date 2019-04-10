@@ -102,11 +102,11 @@
 <!--Carousel Wrapper-->
 <div class="container">
   <br><br>
-  <div class="col-md-12">
+  <div class="col-lg-12 col-md-12 col-sm-12">
       <h1 class="text-center text-white">Adicionados Recentemente</h1>
       <div class="row">
       @foreach ($posts as $post)
-          <div class="col-md-4 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-6 text-center">
             <div class="card bg-dark text-white">
               <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
               <div class="card-img-overlay" >
@@ -121,5 +121,6 @@
     </div>
   </div>
 </div>
+<br><br><br><br>
 @endsection
 

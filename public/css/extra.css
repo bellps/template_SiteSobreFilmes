@@ -1,10 +1,31 @@
 html,
 body,
-header,
-#intro {
+header{
     background-color: rgb(17, 17, 17);
     height: 100%;
 }
+
+#intro {
+  background-color: rgb(17, 17, 17);
+  height: 100%;
+}
+
+#intro {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sec {
+  background-color: rgb(17, 17, 17);
+  height: 55%; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 .c-image {
   object-fit: cover;
@@ -29,12 +50,6 @@ header,
   top: 200px;
 }
 
-#intro {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 /* treco da navbar */
 .navtop{
@@ -43,4 +58,9 @@ header,
 }
 .navtop.scrolled{
   background-color: black;
+}
+
+.cima{
+  position: relative;
+  bottom: 40%;
 }
