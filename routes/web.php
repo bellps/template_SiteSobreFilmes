@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('login');
 });
+
+
 Route::get('/desenhos', 'Conteudo@desenhos')->name('desenhos');
 
 Route::get('/filmes', 'Conteudo@filmes')->name('filmes');
@@ -23,6 +25,7 @@ Route::get('/series', 'Conteudo@series')->name('series');
 Route::get('/sobre', function () {
     return view('sobre');
 })->name('sobre');
+
 
 Auth::routes();
 

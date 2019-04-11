@@ -29,7 +29,7 @@
         @if($post['categoria'] == "Filme" )
             <div class="col-lg-4 col-md-6 col-sm-6 text-center">
             <a data-toggle="modal" data-target= {{ $post['id'] }}>
-                <div class="card bg-dark text-white">
+                <div class="card bg-dark text-white cardM">
                 <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
                 <div class="card-img-overlay" >
                     <div class="cardTittle">

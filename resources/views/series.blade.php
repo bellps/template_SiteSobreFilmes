@@ -26,10 +26,10 @@
   <div class="col-lg-12 col-md-12 col-sm-12">
       <div class="row">
       @foreach ($posts as $post)
-        @if($post['categoria'] == "Serie" )
+        @if($post['categoria'] == "Série" )
             <div class="col-lg-4 col-md-6 col-sm-6 text-center">
             <a data-toggle="modal" data-target= {{ $post['id'] }}>
-                <div class="card bg-dark text-white">
+                <div class="card bg-dark text-white cardM">
                 <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
                 <div class="card-img-overlay" >
                     <div class="cardTittle">
@@ -38,9 +38,7 @@
                 </div>
                 </div>
             </a>
-            </div>
-            
-                     
+            </div>    
         @endif
     <!--/.Card-->
       @endforeach

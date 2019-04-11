@@ -42,7 +42,7 @@
       <!--Caption-->
       <div class="carousel-caption">
         <div class="animated fadeInDown">
-          <h1 class="h1-responsive">Filmes</h1>
+          <h1 class="h1-responsive"><a href=  {{ Route('filmes') }} class="link">Filmes</a></h1>
         </div>
       </div>
       <!--Caption-->
@@ -50,6 +50,7 @@
     <!-- /.First slide -->
 
     <!-- Second slide -->
+   
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
@@ -61,7 +62,7 @@
       <!--Caption-->
       <div class="carousel-caption">
         <div class="animated fadeInDown">
-          <h1 class="h1-responsive">Séries</h1>
+          <h1 class="h1-responsive"> <a href=  {{ Route('series') }} class="link">Séries</a></h1>
         </div>
       </div>
       <!--Caption-->
@@ -69,6 +70,7 @@
     <!-- /.Second slide -->
 
     <!-- Third slide -->
+    
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
@@ -80,11 +82,12 @@
       <!--Caption-->
       <div class="carousel-caption">
         <div class="animated fadeInDown">
-          <h1 class="h1-responsive">Desenhos</h1>
+          <h1 class="h1-responsive"><a href=  {{ Route('desenhos') }} class="link">Desenhos</a></h1>
         </div>
       </div>
       <!--Caption-->
     </div>
+    </a>
     <!-- /.Third slide -->
   </div>
   <!--/.Slides-->
@@ -106,16 +109,19 @@
       <h1 class="text-center text-white">Adicionados Recentemente</h1>
       <div class="row">
       @foreach ($posts as $post)
-          <div class="col-lg-4 col-md-6 col-sm-6 text-center">
-            <div class="card bg-dark text-white">
-              <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
-              <div class="card-img-overlay" >
-                <div class="cardTittle">
-                <h5 class="card-title  text-center "> {{ $post['nome'] }} </h5>
+        @if($post['id']<'7')
+            <div class="col-lg-4 col-md-6 col-sm-6 text-center">
+              <div class="card bg-dark text-white cardM">
+                <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
+                <div class="card-img-overlay" >
+                  <div class="cardTittle">
+                  <h5 class="card-title  text-center "> {{ $post['nome'] }} </h5>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            <br>
+        @endif
 <!--/.Card-->
       @endforeach
     </div>

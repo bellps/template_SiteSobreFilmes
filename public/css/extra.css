@@ -50,6 +50,17 @@ header{
   top: 200px;
 }
 
+.cardM{
+  margin-bottom: 10%;
+}
+
+.link{
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* treco da navbar */
 .navtop{
