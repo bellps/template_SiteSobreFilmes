@@ -28,7 +28,7 @@
       @foreach ($posts as $post)
         @if($post['categoria'] == "Série" )
             <div class="col-lg-4 col-md-6 col-sm-6 text-center">
-            <a data-toggle="modal" data-target= {{ $post['id'] }}>
+            <a data-toggle="modal" data-target= {{ "#modal".$post['id'] }} href= {{ "modal".$post['id'] }}>           
                 <div class="card bg-dark text-white cardM">
                 <img src= {{ $post['imagem'] }} class="card-img cardCerto " alt="...">
                 <div class="card-img-overlay" >
@@ -39,6 +39,24 @@
                 </div>
             </a>
             </div>    
+
+         <!-- Modal -->
+         <div class="modal fade" id= {{ "modal".$post['id'] }} tabindex="-1" role="dialog" aria-labelledby="Description" aria-hidden="true">
+                <div class="modal-dialog  modal-lg bg-dark" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id= {{ "modal".$post['id'] }}> {{ $post['nome'] }}</h5>
+                    </div>
+                    <div class="modal-body bg-black text-white">
+                        <img src= {{ $post['imagem'] }} class="rounded mx-auto d-block modal-image"  alt="...">
+                        <h3>Sinopse:</h3>
+                        <p class="text-justified" >{{ $post['sinopse'] }}</p>
+                        <p><strong>Gênero: </strong>{{ $post['genero'] }}
+                        <br><strong>Lançamento: </strong>{{ $post['lancamento'] }}</p>
+                    </div>
+                    </div>
+                </div>
+            </div>       
         @endif
     <!--/.Card-->
       @endforeach

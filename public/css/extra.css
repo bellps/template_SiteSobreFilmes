@@ -35,6 +35,14 @@ header{
   height: 583px;
 }
 
+.modal-image{
+  height: 400px;
+}
+
+.bg-black{
+  background-color: rgb(26, 26, 26);
+}
+
 .cardCerto {
   object-fit: cover;
   object-position: center;

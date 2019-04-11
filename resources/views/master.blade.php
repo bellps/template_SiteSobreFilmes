@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,16 +38,16 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href={{ Route('filmes') }}>Filmes</a>
+          <a class="nav-link js-scroll-trigger" href= {{ Route('filmes') }}>Filmes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href={{ Route('series') }}>Séries</a>
+          <a class="nav-link js-scroll-trigger" href= {{ Route('series') }}>Séries</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href={{ Route('desenhos') }}>Desenhos</a>
+          <a class="nav-link js-scroll-trigger" href= {{ Route('desenhos') }}>Desenhos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href={{ Route('sobre') }}>Sobre nós</a>
+          <a class="nav-link js-scroll-trigger" href= {{ Route('sobre') }}>Sobre nós</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href=></a>
@@ -56,8 +57,9 @@
 
     <ul class="navbar-nav text-right">
         <li class="nav-item">
-          <button id="log" type="button" class="btn btn-dark btn-sm nav-link js-scroll-trigger" href= {{ Route('logout') }}>Logout</button>
-        </li>
+        <a class="nav-link js-scroll-trigger" href= {{ Route('logout') }}><button type="button" class="btn btn-dark btn-sm nav-link js-scroll-trigger" >Logout</button>
+        </li></a>
+          
     </ul>
   </div>
 </nav>

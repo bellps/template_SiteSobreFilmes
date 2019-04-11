@@ -12,24 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('login');
-});
+    return view('welcome');
+})->name('welcome');
 
+Route::get('/desenhos', ['middleware' => 'auth', 'uses'=>'Conteudo@desenhos'])->name('desenhos');
 
-Route::get('/desenhos', 'Conteudo@desenhos')->name('desenhos');
-
-Route::get('/filmes', 'Conteudo@filmes')->name('filmes');
-
-Route::get('/series', 'Conteudo@series')->name('series');
-
-Route::get('/sobre', function () {
+Route::get('/filmes', ['middleware' => 'auth', 'uses'=>'Conteudo@filmes'])->name('filmes');
+    
+Route::get('/series', ['middleware' => 'auth', 'uses'=>'Conteudo@series'])->name('series');
+    
+Route::get('/sobre', ['middleware' => 'auth', function () {
     return view('sobre');
-})->name('sobre');
-
+}])->name('sobre');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home', 'Conteudo@recentes')->name('home');
+//Route::get('/home', ['middleware' => 'auth', 'HomeController@index'])->name('home');
+Route::get('/home', ['middleware' => 'auth','uses'=>'Conteudo@recentes'])->name('home');
 
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');

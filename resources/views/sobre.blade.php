@@ -65,13 +65,13 @@
 
 <br>
     <blockquote class="blockquote text-right text-white">
-        <p class="mb-0">Pegar citação da lara</p>
+        <p class="mb-0">To sem criatividade hoje. BJS <3 </p>
         <footer class="blockquote-footer">Lara</footer>
     </blockquote>
 
 <br>
     <blockquote class="blockquote text-white">
-        <p class="mb-0">Yasmin entrou de penetra na dupla não merece citação</p>
+        <p class="mb-0">Rosas são vermelhas, violetas também são e a yasmin não sabe criar uma citação</p>
         <footer class="blockquote-footer">Yasmin</footer>
     </blockquote>          
 </div>  
