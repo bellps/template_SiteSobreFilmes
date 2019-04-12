@@ -67,7 +67,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height bg-black text-white">
+        <div class="flex-center position-ref full-height bg-black text-white"  style='background: url("https://i.imgur.com/GijfiPk.jpg")no-repeat center center fixed;'>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -83,7 +83,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title">
                     Tecflix
                 </div>
                 <p><em>Entre ou cadastre-se</em></p>

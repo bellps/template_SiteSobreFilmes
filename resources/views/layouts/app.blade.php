@@ -23,9 +23,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-black">
+<body style='background: url("https://i.imgur.com/GijfiPk.jpg")no-repeat center center fixed;'>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel text-white" style=" background-color: rgb(26, 26, 26);">
+        <nav class="navbar navbar-expand-md text-white">
             <div class="container">
                 <a class="navbar-brand text-white" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}

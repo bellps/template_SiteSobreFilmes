@@ -130,7 +130,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center dark py-3">© 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> TECFLIX</a>
+      <a href="#"> TECFLIX</a>
     </div>
     <!-- Copyright -->
 </div>
